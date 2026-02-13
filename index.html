@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mejor Relación ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink-primary: #ff4d6d;
+            --pink-dark: #c9184a;
+            --bg-soft: #fceef5;
+        }
+
+        body {
+            background-color: var(--bg-soft);
+            font-family: 'Indie Flower', cursive;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #d81b60;
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px #fff;
+        }
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            color: var(--pink-dark);
+            font-size: 2.5rem;
+            margin-top: 50px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        /* --- ESTILO DE LAS NOTAS (Mantenido) --- */
+        .card {
+            background: #fff;
+            padding: 25px;
+            box-shadow: 5px 10px 20px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--pink-primary);
+            position: relative;
+        }
+
+        .card:nth-child(even) {
+            transform: rotate(2deg);
+            border-left: 5px solid var(--pink-dark);
+        }
+
+        .card:hover {
+            transform: scale(1.05) rotate(0deg);
+            z-index: 10;
+        }
+
+        .card h3 { margin-top: 0; color: var(--pink-primary); font-size: 1.8rem; }
+        .card p { font-size: 1.2rem; line-height: 1.5; color: #444; }
+        .stamp { position: absolute; bottom: 10px; right: 15px; font-size: 1.5rem; opacity: 0.5; }
+
+        /* --- SECCIÓN DE FOTOS POLAROID --- */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 40px;
+        }
+
+        .polaroid {
+            background: white;
+            padding: 15px 15px 40px 15px;
+            box-shadow: 8px 10px 20px rgba(0,0,0,0.1);
+            transform: rotate(3deg);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .polaroid:nth-child(even) { transform: rotate(-4deg); }
+
+        .polaroid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border: 1px solid #f0f0f0;
+        }
+
+        .polaroid p {
+            margin-top: 15px;
+            font-size: 1.4rem;
+            color: #555;
+        }
+
+        .polaroid:hover {
+            transform: scale(1.1) rotate(0deg);
+            z-index: 10;
+        }
+
+        /* --- SECCIÓN DE VIDEO --- */
+        .video-section {
+            margin-top: 60px;
+            width: 100%;
+            max-width: 700px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 15px 30px rgba(0,0,0,0.1);
+            transform: rotate(-1deg);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Relación 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .video-container iframe, .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn-back {
+            margin: 60px 0;
+            text-decoration: none;
+            color: white;
+            background: var(--pink-primary);
+            padding: 15px 35px;
+            border-radius: 50px;
+            transition: 0.3s;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+        }
+
+        .btn-back:hover {
+            background: #281920;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Notas de una bonita relación ❤️</h1>
+
+    <div class="container">
+        <div class="card">
+            <h3>Nuestra primera vez...</h3>
+            <p>Estaba nervioso. No sabía como llegarte a la más HERMOSA y SERIA...</p>
+            <p>Hoy, tiempo después te deseo el más bonito día que es para NOSOTROS.</p>
+            <span class="stamp">💌</span>
+        </div>
+
+        <div class="card">
+            <h3>Tu risa</h3>
+            <p>Porque cuando sonríes, no hay nada comparable, no hay nada más precioso.</p>
+            <span class="stamp">✨</span>
+        </div>
+
+        <div class="card">
+            <h3>Y toca agradecer</h3>
+            <p>Por quedarte en los días DIFÍCILES y celebrar conmigo los días donde somos felices. INFINITAMENTE gracias.</p>
+            <span class="stamp">❤️</span>
+        </div>
+
+        <div class="card">
+            <h3>Te amo mucho...</h3>
+            <p>Y que Dios bendiga esta hermosa relación hoy y siempre.</p>
+            <span class="stamp">✨</span>
+        </div>
+    </div>
+
+    <h2>Nuestros Momentos ✨</h2>
+    <div class="photo-gallery">
+        <div class="polaroid">
+            <img src="./assets/IMG-20250418-WA0013.jpg" alt="Foto 1">
+            <p>El inicio de todo</p>
+        </div>
+        <div class="polaroid">
+            <img src="./assets/IMG_20250902_183352.jpg" alt="Foto 2">
+            <p>Mi sonrisa favorita</p>
+        </div>
+        <div class="polaroid">
+            <img src="./assets/IMG_20250507_141809.jpg" alt="Foto 3">
+            <p>Juntos en cada paso</p>
+        </div>
+    </div>
+
+    <h2>Un video para ti 🎥</h2>
+    <div class="video-section">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/shorts/kMbpAlK2gWk" frameborder="0" allowfullscreen></iframe>
+            
+            </div>
+        <p style="text-align:center; font-size: 1.3rem; margin-top: 15px;">"Eres mi mejor historia"</p>
+    </div>
+
+    <a href="#" class="btn-back">⬅ Volver arriba</a>
+
+    <footer style="margin-top: 30px; padding-bottom: 40px; color: #d81b60;">
+        <p>Hecho con ❤️ para la persona más especial</p>
+    </footer>
+
+</body>
+</html>
